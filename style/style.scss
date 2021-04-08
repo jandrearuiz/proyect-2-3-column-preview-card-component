@@ -1,0 +1,95 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 20px 20px;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__sedans {
+    background: rgb(224, 149, 10);
+    padding: 0 50px 40px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    @media (min-width: 1024px) {
+      border-top-right-radius: 0;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    &-image {
+      padding: 40px 0 0;
+    }
+
+    &-description {
+      padding: 0 0 20px;
+    }
+
+    &-nav {
+      border: rgb(224, 149, 10);
+      border-radius: 50px;
+      background: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: rgb(224, 149, 10);
+    }
+  }
+
+  &__suvs {
+    background: rgb(64, 104, 109);
+    padding: 0 50px 40px;
+
+    &-image {
+      padding: 40px 0 0;
+    }
+
+    &-description {
+      padding: 0 0 20px;
+    }
+
+    &-nav {
+      border: rgb(64, 104, 109);
+      border-radius: 50px;
+      background: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: rgb(64, 104, 109);
+    }
+  }
+
+  &__luxury {
+    background: rgb(8, 98, 110);
+    padding: 0 50px 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    @media (min-width: 1024px) {
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 10px;
+    }
+
+    &-image {
+      padding: 40px 0 0;
+    }
+
+    &-description {
+      padding: 0 0 20px;
+    }
+
+    &-nav {
+      border: rgb(8, 98, 110);
+      border-radius: 50px;
+      background: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: rgb(8, 98, 110);
+    }
+  }
+}
