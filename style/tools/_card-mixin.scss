@@ -1,0 +1,31 @@
+@mixin card($name) {
+  @if $name == sedans {
+    background: var(--c-orange);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    @include button(--c-orange);
+
+    @media (min-width: 1024px) {
+      border-top-right-radius: 0;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+  } @else if $name == suvs {
+    background: var(--c-blue);
+
+    @include button(--c-blue);
+  } @else if $name == luxury {
+    background: var(--c-green);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    @include button(--c-green);
+
+    @media (min-width: 1024px) {
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}

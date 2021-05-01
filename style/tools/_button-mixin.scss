@@ -1,0 +1,15 @@
+@mixin button($color) {
+  .button {
+    border-radius: 50px;
+    background: var(--c-white);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var($color);
+
+    &:hover {
+      border: var(--c-white) 1px solid;
+      background: var($color);
+      color: var(--c-white);
+    }
+  }
+}
