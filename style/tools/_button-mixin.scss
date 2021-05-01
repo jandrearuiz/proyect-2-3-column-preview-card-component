@@ -1,5 +1,6 @@
 @mixin button($color) {
   .button {
+    border: 1px solid transparent;
     border-radius: 50px;
     background: var(--c-white);
     padding: 10px 20px;
